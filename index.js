@@ -53,7 +53,7 @@ var getPlatforms = function (projectName) {
         splashPath : 'platforms/windows/images/',
         splash : [
             { name : 'SplashScreenPhone.scale-240.png',  width : 1152, height: 1920 },
-             { name : 'SplashScreenPhone.scale-100.png',  width : 620, height: 300 },
+             { name : 'SplashScreenPhone.scale-100.png',  width : 480, height: 800 },
          
         ]
     });
