@@ -47,6 +47,16 @@ var getPlatforms = function (projectName) {
             { name : 'drawable-port-xhdpi/screen.png', width : 720, height: 1280 },
         ]
     });
+    platforms.push({
+        name : 'windows',
+        isAdded : fs.existsSync('platforms/windows'),
+        splashPath : 'platforms/windows/images/',
+        splash : [
+            { name : 'SplashScreenPhone.scale-240.png',  width : 1152, height: 1920 },
+             { name : 'SplashScreenPhone.scale-100.png',  width : 620, height: 300 },
+         
+        ]
+    });
     // TODO: add all platforms
     deferred.resolve(platforms);
     return deferred.promise;
